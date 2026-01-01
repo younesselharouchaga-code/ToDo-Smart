@@ -1,0 +1,104 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  background: #f6f7fb;
+  color: #111;
+}
+
+.app {
+  width: min(600px, 92vw);
+  margin: 40px auto;
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+.add {
+  display: flex;
+  gap: 10px;
+  margin: 12px 0 16px;
+}
+
+input {
+  flex: 1;
+  padding: 12px 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+button {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  margin: 8px 0 12px;
+}
+
+.filter-btn {
+  background: #eef1ff;
+  border-color: #e2e6ff;
+}
+
+.filter-btn.is-active {
+  background: #3b5bff;
+  color: white;
+}
+
+.counter {
+  margin: 6px 0 10px;
+  color: #444;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+}
+
+.item.done .text {
+  text-decoration: line-through;
+  opacity: .6;
+}
+
+.spacer { flex: 1; }
+
+.icon-btn {
+  background: #ffecec;
+  border: 1px solid #ffd5d5;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.ghost {
+  background: #f2f2f2;
+  border: 1px solid #e5e5e5;
+}
+
+.danger {
+  background: #ff3b3b;
+  color: white;
+}
+
